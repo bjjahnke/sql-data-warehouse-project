@@ -32,7 +32,7 @@ SQL Server Express and SSMS are Windows-only. My setup:
 **Create the container (one time):**
 ```bash
 docker run --platform linux/amd64 \
-  -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<choose-a-strong-password>' -e 'MSSQL_PID=Express' \
+  -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=YourStrong!Passw0rd' -e 'MSSQL_PID=Express' \
   -p 1433:1433 -v sqlserver_data:/var/opt/mssql \
   --name sqlserver -d mcr.microsoft.com/mssql/server:2022-latest
 ```
