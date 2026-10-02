@@ -113,20 +113,26 @@ SQL analytics on **customer behavior**, **product performance**, and **sales tre
 ---
 ## 📂 Repository Structure
 ```
-├── datasets/              # ERP and CRM source CSVs
-├── docs/                  # Diagrams, data catalog, naming conventions
-│   ├── mac-setup.md       # Docker + VS Code setup (my addition)
-│   └── sql-workflow.md    # Working with .sql files, backups (my addition)
-├── scripts/               # bronze/, silver/, gold/ SQL scripts
-├── tests/                 # Data quality checks
-├── README.md
-└── LICENSE                # MIT, original copyright retained
+sql-data-warehouse-project/
+│
+├── datasets/                  # Source data (from Data With Baraa)
+│   ├── source_crm/            # CRM CSVs: cust_info, prd_info, sales_details
+│   └── source_erp/            # ERP CSVs: CUST_AZ12, LOC_A101, PX_CAT_G1V2
+│
+├── docs/                      # My documentation
+│   ├── mac-setup.md           # Docker + VS Code setup for Mac
+│   └── sql-workflow.md        # Working with .sql files, backups
+│
+├── .gitignore                 # Ignores .DS_Store, *.bak, .env
+├── LICENSE                    # MIT, original copyright retained
+└── README.md                  # Project overview and Mac adaptations
 ```
 
 ---
 ## 📝 My Progress & Notes
 
 - [x] Docker + SQL Server Express running on Mac, connected from VS Code
+- [x] Source datasets added
 - [ ] Bronze layer loaded
 - [ ] Silver layer
 - [ ] Gold layer
